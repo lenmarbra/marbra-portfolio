@@ -117,23 +117,17 @@ nav:after{
     #logo{
       margin: .5em auto auto 1.25em;
       width: 50%;
-      animation-name: logo-color;
+      animation-name: title-twist-about;
       animation-duration: 2s;
+      transform-style: preserve-3d;
       }
-      @keyframes logo-color{
-      from{scale: 100%}
-      to{scale: 80%}
+      @keyframes title-twist-about{
+        from{opacity: 0}
+        to{opacity: 1}
       }
     ul{
       margin-left: 19%;
       margin-top: -1%;
-      animation-name: title-twist-about;
-      animation-duration: 4s;
-      transform-style: preserve-3d;
-    }
-    @keyframes title-twist-about{
-    from{opacity: 0}
-    to{opacity: 1}
     }
     li{
       margin: 2em auto auto 3.5em;
@@ -377,7 +371,7 @@ aside{
   width: 12em;
   text-align: left;
   animation-name: title-twist;
-  animation-duration: 2s;
+  animation-duration: 3s;
   transform-style: preserve-3d;
   }
   @keyframes title-twist{
