@@ -196,7 +196,7 @@ aside{
   top: 16.5em;
   left: 2em;
   background-color: rgb(216, 206, 190);
-  background-image: url(/images/startpage/aboutphoto_bw_yellow.png);
+  background-image: url(images/startpage/aboutphoto_bw_yellow.png);
   background-size: 55%;
   background-repeat: no-repeat;
   /* border-radius: 100%; */
@@ -298,7 +298,7 @@ aside{
       top: 23.5em;
       left: 2.5em;
       background-color: rgb(216, 206, 190);
-      background-image: url(/images/startpage/aboutphoto_bw_yellow.png);
+      background-image: url(images/startpage/aboutphoto_bw_yellow.png);
       background-size: 35%;
       background-repeat: no-repeat;
       height: 22em;
