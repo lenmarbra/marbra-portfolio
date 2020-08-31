@@ -1,0 +1,568 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root{
+  --sec-bg-color: #243546;
+  --main-bg-color: #172330;
+  --main-txt-color: #BE985B;
+
+}
+body{
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);  
+  text-align: left;
+  overflow-x: hidden;
+  width: 100%;
+} 
+
+/* --------TEXT-------- */
+h1{
+  color: var(--main-txt-color);  
+  font-family: 'montserrat','Lato', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+  /* font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; */
+  font-size: 60px;
+}
+a{
+  display: block-inline;
+  text-decoration: none;
+}
+p{
+  font-size: 16px;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+@media only screen and (max-width: 400px){
+    p{
+        font-size: 14px;
+    }
+    body{
+      background-color: var(--main-bg-color);
+      color: var(--main-txt-color);  
+      text-align: left;
+      overflow-x: hidden;
+      width: 100%;
+    }
+    }
+
+    #wrapper{
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: flex;
+      cursor: URL(images/all/pointer.svg), auto;
+
+    }
+
+/* ----------HEADER (fixed items)---------- */
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 5.5%;
+  background-color: var(--main-bg-color);
+  font-family: "Lato", "AvantGarde Medium", sans-serif;
+  z-index: 3;
+  display: flex;
+}
+#logo{
+  margin: 1.5em auto auto 2.1em;
+  width: 60%;
+}
+ul{
+  list-style: none;
+  display: inline-block;
+  margin-left: 72%;
+  margin-top: 2%;
+}
+li{
+  display: inline-block;
+  margin: 0 1em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav ul li a{
+  display: inline-block;
+  margin: 0 2%;
+  text-decoration: none;
+  color: var(--main-txt-color);  
+}
+nav:after{
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  content:'';
+  background: inherit;
+  z-index: -1;
+  top: -3.5em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-1.5deg);
+}
+@media only screen and (max-width: 400px){ 
+    nav{
+      position: absolute;
+      top: 0;
+      left: 0; 
+      width: 100%;
+      height: 130%;
+      background-color: var(--main-bg-color);
+      font-family: "Lato", "AvantGarde Medium", sans-serif;
+      z-index: 2;
+      display: flex;
+    }
+    #logo{
+      margin: .5em auto auto 1.25em;
+      width: 50%;
+      animation-name: logo-color;
+      animation-duration: 2s;
+      }
+      @keyframes logo-color{
+      from{scale: 100%}
+      to{scale: 80%}
+      }
+    ul{
+      margin-left: 19%;
+      margin-top: -1%;
+      animation-name: title-twist-about;
+      animation-duration: 4s;
+      transform-style: preserve-3d;
+    }
+    @keyframes title-twist-about{
+    from{opacity: 0}
+    to{opacity: 1}
+    }
+    li{
+      margin: 2em auto auto 3.5em;
+    }
+    nav:after{
+      position: absolute;
+      width: 100%;
+      height: 120%;
+      content:'';
+      background: inherit;
+      z-index: -1;
+      top: -3.5em;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top right;
+      transform: skewY(-7.5deg);
+    }
+    #nav-projects{
+      display: none;
+    }
+  }
+
+/* ---------ASIDE---------- */
+
+aside{
+  position: fixed;
+  width: 25%;
+  height: 10%;
+  z-index: 2;
+}
+  
+/* ---------ABOUT-------rgb(170, 164, 155)--- */
+
+#about-box{
+  width: 22.3em;
+  height: 100vh;
+  background-color: rgb(216, 206, 190);
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  border-radius: 2px;
+  transform: translateX(-45em);
+  overflow-x: hidden;
+}
+#close{
+  border: 0 transparent;
+  position: absolute;
+  top: 48.5em;
+  left: 17.5em;
+  width: 3em;
+  height: 3em;
+  background-color: transparent;
+  color: var(--sec-bg-color);
+  font: 400 16px Montserrat;
+  z-index: 1;
+}
+.about-photo{
+  position: absolute;
+  top: 16.5em;
+  left: 2em;
+  background-color: rgb(216, 206, 190);
+  background-image: url(/images/startpage/aboutphoto_bw_yellow.png);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  /* border-radius: 100%; */
+  height: 22em;
+  width: 100%;
+  opacity: 0.75;
+  z-index: 1;
+}
+.about-text{
+  position: absolute;
+  top: 10em;
+  left: 2em;
+  z-index: 2;
+}
+.about-header{
+  margin-top: 0.4em;
+  margin-bottom: 0.35em;  
+  line-height: 1.2em;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+
+  font-size: 26px;
+  font-weight: 750;
+  font-weight: 500;
+  color: #243546;
+}
+.name{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+
+  font-weight: 400;
+  color: #243546;
+  margin-bottom: 1.5em;
+}
+.about-paragraph{
+  opacity: 0.8;
+  width: 17em;
+  height: 6em;
+  margin-top: 20.5em;
+  margin-right: 0.5em;
+  line-height: 1.5;
+  z-index: 2;
+  color: #243546;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
+.socialmedia{
+  display: flex;
+  position: absolute;
+  top: 47em;
+  left: 1em; 
+  z-index: 3;
+}
+.socialmedia a{
+  display: inline-block;
+  margin: 1em;
+  z-index: 3;
+}
+.socialmedia img{
+  height: 90%;
+  width: 90%;
+}
+.instagram{
+  height: 10px;
+  }
+.about-visible #about-box{
+    transform: translateX(0px);
+}
+@media only screen and (max-width: 400px){
+    .projects{
+      top: 0em;
+    }
+    #about-box{
+      width: 25em;
+      height: 100vh;
+      background-color: rgb(216, 206, 190);
+      position: absolute;
+      top: 0;
+      z-index: -2;
+      border-radius: 2px;
+      transform: translateX(-45em);
+      overflow-x: hidden;
+    }
+    #close{
+      border: 0 transparent;
+      position: absolute;
+      top: 37em;
+      left: 18em;
+      width: 3.5em;
+      height: 3.5em;
+      background-color: transparent;
+      color: var(--sec-bg-color);
+      font: 400 16px Montserrat;
+    }
+    .about-photo{
+      position: absolute;
+      top: 23.5em;
+      left: 2.5em;
+      background-color: rgb(216, 206, 190);
+      background-image: url(/images/startpage/aboutphoto_bw_yellow.png);
+      background-size: 35%;
+      background-repeat: no-repeat;
+      height: 22em;
+      width: 100%;
+      opacity: 0.75;
+      z-index: 1;
+    }
+    .about-text{
+      position: absolute;
+      top: 11em;
+      left: 2.5em;
+      z-index: 2;
+    }
+    .about-header{
+      margin-top: -3em;
+      margin-bottom: 0.35em;  
+      line-height: 1.2em;
+      font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;   
+      font-size: 26px;
+      font-weight: 750;
+      font-weight: 500;
+      color: #243546;
+    }
+    .about-paragraph{
+      margin-top: .5em;
+    }
+    .socialmedia{
+      display: none;
+      /* top: 25.6em;
+      left: 3.5em;  */
+    }
+  }
+
+/* ------projects------- */
+
+   
+.projects{
+  position: absolute;
+  top: 4em;
+  left: 0em;
+  width: 100%;
+
+  display: flex;
+  flex-shrink: shrink;
+  flex-wrap: wrap;
+  flex-shrink: initial;
+}
+@media only screen and (max-width: 400px){
+      .projects{
+        top: 3em;
+      }
+  }
+
+
+/* -----card----- */
+
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 12.6em;
+  height: 12.6em;
+  background-color: var(--sec-bg-color);
+  background-color: var(--main-bg-color);
+  font-size: 28px;
+  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+  margin: 0.045em;
+  box-shadow: 0px 3px 6px #3a3b3dea;
+}
+
+.card h2{
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+  margin: 1em auto auto 1em;
+  width: 12em;
+  text-align: left;
+  animation-name: title-twist;
+  animation-duration: 2s;
+  transform-style: preserve-3d;
+  }
+  @keyframes title-twist{
+  from{transform: rotateX(90deg)}
+  to{transform: rotateX(0deg)}
+  }
+a img {
+  display: inline-block;
+  width: 12.6em;
+  height: 12.6em;
+} 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color: var(--sec-bg-color);
+  opacity: 0;
+}
+.card:hover .overlay {
+  opacity: 1;
+  background-color: var(--sec-bg-color);
+}
+h5{
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+  color: var(--main-txt-color);
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
+  font-weight: 50;
+  margin: 15.4em 1.9em auto 2em;
+  text-align: left;
+  width: 14em;
+}
+a{
+  text-decoration: none;
+  color: var(--main-txt-color);
+  cursor: URL(images/all/pointer.svg), auto;
+}
+button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12.6em;
+  width: 12.6em;
+  border: 0 transparent;
+  cursor: URL(images/pointer.svg), auto;
+  color: var(--txt-color);
+  background-color: transparent;
+}
+button:focus {
+  outline:0;
+  border: none;
+}
+button h5{
+  margin: 16.5em 1.9em auto 2em;
+}
+.red{
+  background-color: rgb(163, 103, 103);
+  z-index: 4;
+}
+.red h2{
+  margin: 10em auto auto 1.5em;
+  width: 8em;
+  color: var(--main-bg-color);
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
+  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+}
+.yellow{
+  background-color: #BE985B;
+  z-index: 4;
+}
+.yellow h2{
+  margin: 10em auto auto 1.5em;
+  width: 8em;
+  color: var(--main-bg-color);
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
+  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+}
+.text-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 400px){ 
+    .card {
+      margin: 3em auto auto .5em;
+      width: 12.4em;
+      height: 12.4em;
+      background-color: var(--main-bg-color);
+    }
+    .card h2{
+      font-size: 32px;
+      font-weight: 400;
+      font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+      margin: -3em auto auto -1.1em;
+      width: 12.4em;
+      text-align: center;
+    }
+    a img {
+      width: 12.4em;
+      height: 12.4em;
+    } 
+    .card:hover .overlay {
+      opacity: 0;
+    }
+    /* .txt-bg{
+      display: inline-block;
+      margin: -4.5em auto auto 1em;
+      padding: .5em;
+      height: 2em;
+      width: auto;
+      background-color: var(--main-bg-color);
+      z-index: 3;
+    } */
+    .text-mobile{
+      display: inline-block;
+      font-size: 18px;
+      margin: 1em auto auto .85em;
+      line-height: 1.5;
+      color: var(--main-txt-color);
+      font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
+      font-weight: 50;
+      text-align: left;
+      width: auto;
+      z-index: 4;
+    }
+    button{
+      top: 1em;
+      height: 34em;
+      width: 12em;
+    }
+    .red{
+      display: none;
+    }
+    .yellow{
+      display: none;
+    }
+}
+
+
+/* --------FOOTER-------- */
+
+footer{
+  position: absolute;
+  bottom: -80em;
+  background-color: #243546;
+  color: #BE985B;
+}
+.contact{
+  position: absolute;
+  left: 47em;
+  bottom: 1em;
+  width: 40em;
+  line-height: 1.5;
+  text-align: right;
+  text-decoration: none;
+}
+.contact a{
+  text-decoration: underline;
+  color: #BE985B;
+}
+a{
+  display: inline-block;
+}
+
+@media only screen and (max-width: 400px){
+    footer{
+      bottom: 1em;
+    }
+    .contact{
+      left: 1em;
+      top: 368em;
+      bottom: 1em;
+      width: 12em;
+      text-align: left;
+    }
+    .contact a{
+      text-decoration: underline;
+      color: #BE985B;
+      margin: 1em 0 2em;
+    }       
+}
