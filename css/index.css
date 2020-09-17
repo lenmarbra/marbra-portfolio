@@ -170,7 +170,7 @@ aside{
   top: 0;
   z-index: -2;
   border-radius: 2px;
-  transform: translateX(-45em);
+  /* transform: translateX(-45em); */
   overflow-x: hidden;
 }
 #close{
@@ -188,14 +188,10 @@ aside{
 .about-photo{
   position: absolute;
   top: 16.5em;
-  left: 2em;
+  left: 4em;
   background-color: rgb(216, 206, 190);
-  background-image: url(images/startpage/aboutphoto_bw_yellow.png);
-  background-size: 55%;
-  background-repeat: no-repeat;
-  /* border-radius: 100%; */
-  height: 22em;
-  width: 100%;
+  height: 30%;
+  width: 60%;
   opacity: 0.75;
   z-index: 1;
 }
@@ -289,10 +285,10 @@ aside{
     }
     .about-photo{
       position: absolute;
-      top: 23.5em;
-      left: 2.5em;
+      top: 23em;
+      left: 2em;
       background-color: rgb(216, 206, 190);
-      background-image: url(images/startpage/aboutphoto_bw_yellow.png);
+      background-image: url(/images/startpage/aboutphoto_bw_yellow.png);
       background-size: 35%;
       background-repeat: no-repeat;
       height: 22em;
