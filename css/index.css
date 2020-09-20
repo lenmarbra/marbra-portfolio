@@ -191,7 +191,7 @@ aside{
   left: 4em;
   background-color: rgb(216, 206, 190);
   height: 30%;
-  width: 60%;
+  width: 57%;
   opacity: 0.75;
   z-index: 1;
 }
@@ -431,9 +431,6 @@ button h5{
 .text-mobile{
   display: none;
 }
-img .tilt{
-  transform: rotate(40deg);
-}
 
 @media only screen and (max-width: 400px){ 
     .card {
@@ -445,7 +442,7 @@ img .tilt{
     .card h2{
       font-size: 32px;
       font-weight: 400;
-      font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+      font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
       margin: -3em auto auto -1.1em;
       width: 12.4em;
       text-align: center;
@@ -457,19 +454,10 @@ img .tilt{
     .card:hover .overlay {
       opacity: 0;
     }
-    /* .txt-bg{
-      display: inline-block;
-      margin: -4.5em auto auto 1em;
-      padding: .5em;
-      height: 2em;
-      width: auto;
-      background-color: var(--main-bg-color);
-      z-index: 3;
-    } */
     .text-mobile{
       display: inline-block;
       font-size: 18px;
-      margin: 1em auto auto .85em;
+      margin: -13em auto auto .85em;
       line-height: 1.5;
       color: var(--main-txt-color);
       font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
@@ -482,12 +470,6 @@ img .tilt{
       top: 1em;
       height: 34em;
       width: 12em;
-    }
-    .red{
-      display: none;
-    }
-    .yellow{
-      display: none;
     }
 }
 
@@ -523,7 +505,7 @@ a{
     }
     .contact{
       left: 1em;
-      top: 368em;
+      top: 380em;
       bottom: 1em;
       width: 12em;
       text-align: left;
@@ -532,5 +514,16 @@ a{
       text-decoration: underline;
       color: #BE985B;
       margin: 1em 0 2em;
-    }       
+    }   
+    .triangle-up {
+      position: absolute;
+      left: 20em;
+      top: 383.3em;
+
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 22px solid #BE985B;
+    }    
 }
