@@ -170,13 +170,13 @@ aside{
   top: 0;
   z-index: -2;
   border-radius: 2px;
-  /* transform: translateX(-45em); */
+  transform: translateX(-45em);
   overflow-x: hidden;
 }
 #close{
   border: 0 transparent;
   position: absolute;
-  top: 48.5em;
+  top: 47.5em;
   left: 17.5em;
   width: 3em;
   height: 3em;
@@ -187,7 +187,7 @@ aside{
 }
 .about-photo{
   position: absolute;
-  top: 16.5em;
+  top: 16em;
   left: 4em;
   background-color: rgb(216, 206, 190);
   height: 30%;
@@ -205,9 +205,7 @@ aside{
   margin-top: 0.4em;
   margin-bottom: 0.35em;  
   line-height: 1.2em;
-  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
-  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
-
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
   font-size: 26px;
   font-weight: 750;
   font-weight: 500;
@@ -216,8 +214,7 @@ aside{
 .name{
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
-  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
 
   font-weight: 400;
   color: #243546;
@@ -227,7 +224,7 @@ aside{
   opacity: 0.8;
   width: 17em;
   height: 6em;
-  margin-top: 20.5em;
+  margin-top: 19em;
   margin-right: 0.5em;
   line-height: 1.5;
   z-index: 2;
@@ -238,8 +235,8 @@ aside{
 .socialmedia{
   display: flex;
   position: absolute;
-  top: 47em;
-  left: 1em; 
+  top: 44em;
+  left: 2em; 
   z-index: 3;
 }
 .socialmedia a{
@@ -281,7 +278,7 @@ aside{
       height: 3.5em;
       background-color: transparent;
       color: var(--sec-bg-color);
-      font: 400 16px Montserrat;
+      font: 400 16px Lato;
     }
     .about-photo{
       position: absolute;
@@ -354,7 +351,7 @@ aside{
   background-color: var(--sec-bg-color);
   background-color: var(--main-bg-color);
   font-size: 28px;
-  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
   margin: 0.045em;
   box-shadow: 0px 3px 6px #3a3b3dea;
 }
@@ -362,8 +359,8 @@ aside{
 .card h2{
   font-size: 28px;
   font-weight: 400;
-  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
-  margin: 1em auto auto 1em;
+  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
+  margin: 1em auto auto 0.7em;
   width: 12em;
   text-align: left;
   animation-name: title-twist;
@@ -388,21 +385,25 @@ a img {
   transition: .5s ease;
   background-color: var(--sec-bg-color);
   opacity: 0;
+  padding: 1em;
 }
 .card:hover .overlay {
-  opacity: 1;
+  opacity: .95;
   background-color: var(--sec-bg-color);
 }
 h5{
-  font-size: 18px;
-  margin-bottom: 0.5em;
+  font-size: 22px;
   line-height: 1.5;
   color: var(--main-txt-color);
   font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
-  font-weight: 50;
-  margin: 15.4em 1.9em auto 2em;
+  font-weight: 800;
+  margin-top: 11.4em;
   text-align: left;
   width: 14em;
+}
+#overlay h5{
+  margin-top: 11.4em;
+  margin-left: 0;
 }
 a{
   text-decoration: none;
