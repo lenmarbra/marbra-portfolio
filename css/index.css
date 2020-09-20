@@ -428,34 +428,11 @@ button:focus {
 button h5{
   margin: 16.5em 1.9em auto 2em;
 }
-.red{
-  background-color: rgb(163, 103, 103);
-  z-index: 4;
-}
-.red h2{
-  margin: 10em auto auto 1.5em;
-  width: 8em;
-  color: var(--main-bg-color);
-  font-size: 28px;
-  font-weight: 400;
-  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
-  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
-}
-.yellow{
-  background-color: #BE985B;
-  z-index: 4;
-}
-.yellow h2{
-  margin: 10em auto auto 1.5em;
-  width: 8em;
-  color: var(--main-bg-color);
-  font-size: 28px;
-  font-weight: 400;
-  font-family: 'ITC Stone Informal Std Medium', 'caslon', 'miller', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif; 
-  font-family: 'lato','montserrat', 'Univers LT Std', 'Helvetica Neue', 'arial', sans-serif;
-}
 .text-mobile{
   display: none;
+}
+img .tilt{
+  transform: rotate(40deg);
 }
 
 @media only screen and (max-width: 400px){ 
