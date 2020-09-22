@@ -1,6 +1,9 @@
 
 
 /* ----------GRID---------- */
+body{
+  background-image: linear-gradient(#ffffff, #575454);
+}
 
 #content{
   display: grid;
@@ -417,19 +420,13 @@ h2 {
 
 footer {
   grid-area: footer;
-  color: #302f2f;
-  font-family: "Lato", "AvantGarde Medium", sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 2.5em;
-  display: flex;
-  justify-content: space-between;
 }
 footer p{
   font-size: 18px;
   font-family: "ITC Stone Informal Std Medium";
   font-weight: 500;
   line-height: 2em;
+  color: #e7e7e7;
 }
 
 
