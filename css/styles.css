@@ -96,15 +96,17 @@ h2 {
 
 nav{
   position: fixed;
-  top: -2em;
-  left: 0; 
+  top: 0em;
+  left: 0;
   width: 100%;
-  height: 5.1%;
-  background-color: rgb(245, 243, 243);
+  height: 6.5%;
+  /* background-color: rgb(245, 243, 243); */
+  background-color: #fff;
   font-family: "Lato", "AvantGarde Medium", sans-serif;
   z-index: 4;
   display: flex;
 }
+/* 
 nav:after{
   position: absolute;
   width: 120%;
@@ -118,18 +120,19 @@ nav:after{
   left: 0;
   transform-origin: top right;
   transform: skewY(-1.5deg);
-}
+} */
 #logo{
-  margin: 3.2em auto auto 1.8em;
-  width: 3.5em;
+  margin: 1em auto auto 1em;
+  width: 3em;
+  opacity: 80%;
   z-index: 5;
 }
 nav ul{
   list-style: none;
   display: inline-block;
   min-width: 20em;
-  margin-left: 70.5em;
-  margin-top: 3.3em;
+  margin-left: 73em;
+  margin-top: 1em;
   z-index: 5;
 }
 nav li{
@@ -140,7 +143,7 @@ nav li{
 }
 nav ul li a{
   display: inline-block;
-  margin: -.25em -10%;
+  margin: -10em -10%;
   text-decoration: none;
   color: var(--main-txt-color);  
 }
