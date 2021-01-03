@@ -1,262 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <title>Maria Bramer Portfolio</title>
-  <!-- <script>
-    // Picture element HTML5 shiv
-    document.createElement( "picture" );
-  </script> -->
-  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Portfolio of Maria Bramer</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/less" ></script> -->
+
 </head>
 
-<!-- nav -->
-
-<body>
-  <div id="wrapper">  
-
-  <nav>
-    <a href="index.html">
-      <!-- <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
-        <g id="Home_circle" data-name="Home circle" clip-path="url(#clip-Home_circle)">
-          <circle id="Ellipse_25" data-name="Ellipse 25" cx="14" cy="14" r="14" fill="#be985b" fill-opacity="0.8" />
-        </g>
-      </svg> -->
-      <!-- <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="106.855" height="62.09" viewBox="0 0 251.855 207.09">
-        <g id="Group_3" data-name="Group 3" transform="translate(-115.782 -547.15)">
-          <path id="Path_14" data-name="Path 14" d="M283.839,612.351c-1.524-9.3-3.157-17.334-10.482-23.282-6.678-5.423-14.36-7.736-22.733-8.084-12.789-.533-23.928,3.349-32.987,12.973-.611.649-1.138,1.382-1.789,2.179-6.945-10.416-16.586-14.747-28.077-15.423-11.368-.668-21.51,2.39-30.236,10.957l.04-9.19-2.529-.012c.02-.113.013-.177-.031-.177-11.378.007-25.736-.058-37.113-.177-1.568-.016-2.411.481-2.028,2.074,1.564,6.5,3.026,12.693,2.861,34.9a26.812,26.812,0,0,0,.271,4.215l-.262,60.277,40.371.189.011-2.551q.1-23.008.21-46.016a49.514,49.514,0,0,1,.242-5.368c.471-4.114,1.483-8,4.6-10.958,5.849-5.557,14.681-3.454,17.268,4.282a24.109,24.109,0,0,1,1.285,7.429c.058,17.008-.048,34.016-.1,51.024,0,.723-.007,1.446-.01,2.233l40.484.19.011-2.5q.1-23.007.209-46.016a50.009,50.009,0,0,1,.241-5.367c.47-4.114,1.479-8,4.588-10.962,5.843-5.563,14.68-3.471,17.273,4.26a24.1,24.1,0,0,1,1.289,7.428c.058,17.008-.048,34.016-.1,51.024,0,.724-.007,1.448-.01,2.25l37.505.176.011-2.493c.081-18.555.241-37.11.186-55.665C284.287,621.555,284.583,616.9,283.839,612.351Z" fill="#be985b" opacity="0.88"/>
-          <g id="Group_2" data-name="Group 2" opacity="0.88">
-            <path id="Path_15" data-name="Path 15" d="M285.109,676.743c0,1.947-.079,3.9.025,5.839.082,1.52-.389,2.02-1.9,2.012-11.379-.06-25.736-.063-37.114,0-1.568.009-2.409-.492-2.019-2.083,1.592-6.493,3.082-12.679,3.013-34.884V549.656c0-2.5,0-2.506,2.438-2.506h35.207c2.461,0,2.463,0,2.463,2.479v40.077a4.16,4.16,0,0,0,1.067-.449c6.132-5.463,13.436-7.329,21.3-7.681,11.742-.525,22.421,2.515,31.67,10.161,8.869,7.333,14.256,16.983,16.518,28.454,2.553,12.947,1.983,25.717-3.338,37.879-6.894,15.758-18.692,25.061-35.23,27.657a45.587,45.587,0,0,1-22.168-1.777,26.505,26.505,0,0,1-10.326-6.437c-.333-.334-.718-.614-1.079-.919Zm33.565-44.095c-.17-1.238-.331-3.589-.833-5.858-1.681-7.6-7.348-12.715-14.312-13.084a15.29,15.29,0,0,0-15.788,11.05,29.155,29.155,0,0,0-.011,18.016c2.03,6.324,6.307,10.306,12.776,11.146a14.465,14.465,0,0,0,14.385-6.324C317.841,643.495,318.535,638.705,318.674,632.648Z" fill="#be985b"/>
-          </g>
-          <text id="maria_bramer" data-name="maria bramer" transform="translate(116.637 699.24)" fill="#be985b" font-size="24.741" font-family="Montserrat-Regular, Montserrat" letter-spacing="0.247em" opacity="0.88"><tspan x="0" y="24">maria bramer</tspan></text>
-        </g>
-      </svg> -->
-    </a>
-    <ul>
-      <li id="nav-about">About</li>
-      <li id="nav-projects"><a href="index.html#projects">Projects</a></li>
-    </ul>
-  </nav>
-  <aside>
-  <!-- About area -->
-    <section id="about-box">
-      <img class="about-photo" src="images/startpage/aboutphoto_bw_yellow.png">
-      <article class="about-text">
-        <h3 class="about-header">Visual & UX Designer</h3>
-        <p class="name">Maria Bramer</p>
-        <p class="about-paragraph">
-          With a great passion  for Web and Visual design I am currently studying a Masters’ degree at Scuola Politecnica di Design. Through this program I am gaining in-depth knowledge within both online and offline adapted design.</p>
-        </p>
-      </article>
-      <div class="socialmedia">
-        <a href="https://www.linkedin.com/in/maria-bramer-9965824"><img src="images/startpage/socialmedia/Linkedin_blue.svg"></a>
-        <a href="#"><img src="images/startpage/socialmedia/Behance_blue.svg"></a>
-        <a href="#"><img src="images/startpage/socialmedia/Twitter_blue.svg"></a>
-        <a href="https://www.instagram.com/marbra_pf"><img src="images/startpage/socialmedia/Instagram_blue.svg"></a>
-      </div>
-      <button id="close">Close</button>
-    </section>
-  </aside>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-
-      <button id="aboutcard" class="card">
-        <h2>Visual & UX Designer</h2>
-        <p>Maria Bramer</p>
-        <div class="overlay" id="overlay">
-            <h5>About me</h5>
-        </div>
-      </button>
-
-      <article class="card">
-        <a href="prescriptionflow.html">
-          <img srcset="images/startpage/rayban.jpg" alt="UX & design - RayBan Prescriptoin flow" media="minwidth: 481px">
-        </a>
-        <a class="overlay" href="prescriptionflow.html">
-          <h5>UX & UI Design</h5> 
-          <p>Case Study - RayBan's Prescription flow</p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>UX & UI Design</h5> 
-        <p>Case Study <i>RayBan's Prescription flow</i></p>
-      </div>
-
-      <article class="card">
-        <a href="ux.html">
-          <img srcset="images/startpage/magis.jpg" alt="UX & design - Use Case Magis" media="minwidth: 481px">
-        </a>
-        <a class="overlay" href="ux.html">
-          <h5>UX & UI Design</h5>
-          <p>Case Study - Magis</p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>UX & UI Design</h5> 
-        <p>Case Study <i>Magis</i></p>
-      </div>
-      
-      <article class="card">
-        <a  href="https://lenmarbra.github.io/frontend-index/">
-          <img srcset="images/startpage/frontend.png" alt="Frontend">
-        </a>
-        <a class="overlay" href="https://lenmarbra.github.io/frontend-index/">
-          <h5>Frontend Development</h5>
-          <p>Work Index</p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>Frontend Development</h5> 
-        <p>Work Index</p>
-      </div>
-
-      <article class="card">
-        <a href="animationfun.html">
-          <img srcset="images/startpage/animationfun.png" alt="HTML, CSS: Animation fun!" media="/minwidth: 481px">
-        </a>
-        <a class="overlay" href="animationfun.html">
-          <h5>HTML, CSS</h5>
-          <p>Animation fun!</p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>HTML & CSS </h5> 
-        <p>Animation fun!</p>
-      </div>
-
-      <article class="card">
-        <a href="https://selfandart.netlify.app/">
-          <img srcset="images/startpage/selfart.png" alt="Online magazine">
-        </a>
-        <a class="overlay" href="https://selfandart.netlify.app/">
-          <h5>Editorial design</h5>
-          <p>Online Magazine <i>Self & Art</i></p>  
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>Editorial design</h5> 
-        <p>Online Magazine <i>Self & Art</i></p>  
-      </div>
-      
-      <article class="card">
-        <a href="https://lenmarbra.github.io/Wall-Patterns/">
-          <img srcset="images/startpage/wallpatterns.png" alt="Wallpatterns configurator">
-        </a>
-        <a class="overlay" href="https://lenmarbra.github.io/Wall-Patterns/">
-          <h5>HTML, CSS & JS</h5>
-          <p>Wall Patterns Configurator</p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>HTML, CSS & JS</h5> 
-        <p>Wall Patterns Configurator</p>  
-      </div>
-
-      <article class="card">
-        <a href="cosven.html">
-          <img srcset="images/startpage/cosven.jpg" alt="Layout & Design: Cosimo Veneziano">
-        </a>
-        <a class="overlay" href="cosven.html">
-          <h5>Editorial Design:</h5>
-          <p>Layout of <i>Cosimo Veneziano</i></p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>Editorial design</h5> 
-        <p>Layout of <i>Cosimo Veneziano</i></p>
-      </div>
-
-      <article class="card">
-        <a href="typography.html">
-          <img srcset="images/startpage/typography.png" alt="Typography">
-        </a>
-        <a class="overlay" href="typography.html">
-          <h5>Typography</h5>
-          <p>Process & creation of an alphabet</p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>Typography</h5>
-        <p>Process & creation of an alphabet</p>
-      </div>
-
-      <article class="card">
-        <a href="illustrations.html">
-          <img srcset="images/startpage/angelou.png" alt="Illustrations">
-        </a>
-        <a class="overlay" href="illustrations.html">
-          <h5>Illustrations</h5>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>Illustrations</h5>
-      </div>
- 
-      <article class="card">
-        <a href="#">
-          <img srcset="images/startpage/thefork_bw.png" alt="UX & design - Use Case TheFork">
-        </a>
-        <a class="overlay" href="#">
-          <h5>UX/UI Design</h5>
-          <p>Use Case - TheFork</p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>UX/UI Design</h5>
-        <p>Use Case - TheFork</p>
-      </div>
-
-      <article class="card">
-        <a href="lettersofdeath.html">
-          <img srcset="images/startpage/lettersofdeath.png" alt="Layout & design: Letters of death">
-        </a>
-        <a class="overlay" href="lettersofdeath.html">
-            <h5>Layout & typography</h5>
-            <p><i>Letters of death</i></p>
-        </a>
-      </article>
-      <div class="text-mobile">
-        <h5>Layout & typography</h5>
-        <p><i>Letters of death</i></p>
-      </div>
-
-    </section>
-
-    <footer>
-      <!-- <a href="#wrapper" class="top">Back to Top</a> -->
-      <div class="contact">
-        <p>marbra0022@gmail.com &nbsp<span>&#9830;</span>&nbsp Phone: +46 70 170 30 30 &nbsp<span>&#9830;</span> &nbsp
-        <a href="pdf/CV-Maria Bramer.pdf" alt="Maria Bramer - CV"download>Download CV ↓</a></p>
-      </div>
-      <a class="triangle-up" href="#wrapper"></a>
-    </footer> 
-
+<body class="cursor">
+  
+  <div class="row">
+    <div class="columns four intro">
+      <h2>Maria Bramer</h2>
+      <h1>UX & Visual designer</h1>
+      <p>Multi-disciplinary designer with a background in Information Systems. Aligning inspiration, creativity and branding to obtain great Visual and Digital experiences.
+      </p>  
+    </div>
+    <div class="offset-by-one columns six video-area">
+      <a href="projects_page.html">
+        <img class="startpage-video mobile" src="images/startpage/pasta.png" alt="">
+        <video class="startpage-video desktop" loop="" autoplay="" muted="" src="images/startpage/startpagevideo.mp4"></video>
+        <h2>Projects</h2>
+        <img class="arrow" src="images/startpage/arrowtwo.svg" alt="">
+      </a>
+    </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/CSSRulePlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+  <!-- <div class="row">
+    <div class="contact-arrow">
+      <h2 class="contact-txt">Contact</h2>
+      <img class="arrow-down contact-arrow" src="images/startpage/arrow-down.svg" alt="">
+    </div>
+  </div> -->
 
-  <script>
-  //ABOUT-BOX
-  document.getElementById('overlay').addEventListener('click', displayAbout);
-  document.getElementById('nav-about').addEventListener('click', displayAbout);
-  document.getElementById('close').addEventListener('click', hideAbout);
+    <div class="mail-and-cv startpage-mailcv">
+      <a href="images/pdf/CVMariaBramer.pdf"><h2>CV</h2></a>
+      <a href="mailto:marbra@live.se"><h2>Contact</h2></a>
+    </div>
 
-  function displayAbout(event){
-    let elementToShow = '#about-box';
-    gsap.to('#about-box', {x:"0%", duration: .8})
-  }
-
-  function hideAbout(event){
-    let elementToHide = '#about-box';
-    gsap.to('#about-box', {x:"-100%", duration: .8})
-  }
-  </script>
 </body>
+
 </html>
-
-
