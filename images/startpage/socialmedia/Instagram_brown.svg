@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-Instagram_1">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Instagram_1" data-name="Instagram – 1" clip-path="url(#clip-Instagram_1)">
+    <path id="instagram" d="M131.278,56.2H117.562a8.142,8.142,0,0,0-8.142,8.142V78.056a8.142,8.142,0,0,0,8.142,8.142h13.716a8.142,8.142,0,0,0,8.142-8.142V64.34A8.142,8.142,0,0,0,131.278,56.2ZM124.45,76.291a5.035,5.035,0,1,1,5.035-5.035A5.035,5.035,0,0,1,124.45,76.291ZM132.522,65.1a1.927,1.927,0,1,1,1.927-1.927A1.927,1.927,0,0,1,132.522,65.1Z" transform="translate(-109.42 -56.197)" fill="#6c5b43"/>
+  </g>
+</svg>
